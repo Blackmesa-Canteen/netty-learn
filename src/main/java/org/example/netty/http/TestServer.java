@@ -30,8 +30,8 @@ public class TestServer {
             System.out.println("Server is ready");
 
             // 绑定一个端口
-            ChannelFuture channelFuture = serverBootstrap.bind(6668).sync();
-            System.out.println("server started at 6668");
+            ChannelFuture channelFuture = serverBootstrap.bind(8090).sync();
+            System.out.println("server started at 8090");
 
             // 对关闭通道的监听
             channelFuture.channel().closeFuture().sync();
